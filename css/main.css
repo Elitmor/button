@@ -1,0 +1,48 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+button.btn {
+    position: relative;
+    color: #000;
+    padding: 15px 20px;
+    width: 320px;
+    text-align: center;
+    margin: 30px 0;
+    background-image: linear-gradient( to left, transparent, transparent 50%, orange 50%, orange);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 0.75s ease-in;
+    border-radius: 3px;
+    font-size: 18px;
+    border: none;
+}
+
+button.btn::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 51px;
+    color: orange;
+    background-color: orange;
+    left: 0;
+    top: 0;
+}
+
+button.btn:hover {
+    background-position: 0 0;
+    color: #fff;
+}
+
+
+/* .arrow {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    right: 50px;
+} */
+
+.arrow {
+    margin-left: 15px;
+}
